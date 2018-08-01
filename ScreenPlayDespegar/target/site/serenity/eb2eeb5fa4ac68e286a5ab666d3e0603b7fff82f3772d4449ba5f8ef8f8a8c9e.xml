@@ -1,0 +1,148 @@
+<acceptance-test-run title=": search for prizes of flights from &apos;Bogotá, Bogotá D.C., Colombia&apos; to &apos;Ciudad de México, México D.F., México&apos; between" name=": search for prizes of flights from &apos;Bogotá, Bogotá D.C., Colombia&apos; to &apos;Ciudad de México, México D.F., México&apos; between" description="&apos;Vie, 25 may 2018&apos; and &apos;Dom, 17 jun 2018&apos;, collecting prizes by cheaper to expensive and printing the prizes in an excel file" steps="14" successful="14" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="84209" timestamp="2018-07-29T15:20:28.422-05:00">
+  <user-story id="despegar.com" name="Despegar.com" path="src/test/resources/features/despegar.feature"/>
+  <tags>
+    <tag name="Despegar.com" type="feature"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>from</header>
+      <header>to</header>
+      <header>startDate</header>
+      <header>endDate</header>
+      <header>prize</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>&quot;Bogotá, Bogotá D.C., Colombia&quot;</value>
+        <value>&quot;Ciudad de México, México D.F., México&quot;</value>
+        <value>&quot;Vie, 31 jul 2018&quot;</value>
+        <value>&quot;Jue, 30 ago 2018&quot;</value>
+        <value>&quot;1.841.847&quot;</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {from=&quot;Bogotá, Bogotá D.C., Colombia&quot;, to=&quot;Ciudad de México, México D.F., México&quot;, startDate=&quot;Vie, 31 jul 2018&quot;, endDate=&quot;Jue, 30 ago 2018&quot;, prize=&quot;1.841.847&quot;}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="661fe3986d7732340c848d874c1d54b1.png"/>
+    </screenshots>
+    <test-group name="Given Juan is on the Despegar home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6feae94d651480f84839bfe0bfab7a3e.png"/>
+      </screenshots>
+      <test-group name="&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; open the browser on Despegar home page" result="SUCCESS">
+        <screenshots>
+          <screenshot image="da16a79a46533b53ac5799959e444a08.png"/>
+        </screenshots>
+        <test-step result="SUCCESS" duration="18833">
+          <screenshots>
+            <screenshot image="5f9e8f348eec26c2fe6fd15633296a8f.png"/>
+          </screenshots>
+          <description>Opens the Despegar home page</description>
+        </test-step>
+        <test-step result="SUCCESS" duration="7472">
+          <screenshots>
+            <screenshot image="5a2fee156718123449625922aab8e1e7.png"/>
+            <screenshot image="eb1aa76d47a9088a926e0f629748ab6c.png"/>
+          </screenshots>
+          <description>Opens the Despegar home page</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-group name="When Juan search for flights from &quot;Bogotá, Bogotá D.C., Colombia&quot; to &quot;Ciudad de México, México D.F., México&quot; between &quot;Vie, 31 jul 2018&quot; and &quot;Jue, 30 ago 2018&quot;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2f1d4f8679fa2cf802394d1d27e61e65.png"/>
+        <screenshot image="661fe3986d7732340c848d874c1d54b1.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1619">
+        <screenshots>
+          <screenshot image="d65d2b3b8f1156f4c7f515bb86b308c7.png"/>
+          <screenshot image="c01863f8262babe6924db65394c1f899.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; clicks on Origen</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="6980">
+        <screenshots>
+          <screenshot image="2cc4f2463c620b4b8988a3fc2f3c127b.png"/>
+          <screenshot image="6abe45da93dd7220abf71d3a7f9a76fe.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; enters &apos;Bogotá, Bogotá D.C., Colombia&apos; into Origen Input then hits [ENTER]</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2165">
+        <screenshots>
+          <screenshot image="88d36864615deb08cdd9ee664d897a31.png"/>
+          <screenshot image="eb6bdb803aca89d81ba06bee18ed9053.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; types &apos;ENTER&apos; in Origen Input</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2751">
+        <screenshots>
+          <screenshot image="49602931924392fc6dbe2bb5a9de6bfb.png"/>
+          <screenshot image="056cb9fed1293a0064586dcdd0bdf8c9.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; clicks on Destino</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="8849">
+        <screenshots>
+          <screenshot image="3c9446043728a21de968ae6486fdd413.png"/>
+          <screenshot image="8359f8285892fd220d0653eb7691f240.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; enters &apos;Ciudad de México, México D.F., México&apos; into Destino Input then hits [ENTER]</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2639">
+        <screenshots>
+          <screenshot image="a8025013d334a59cd796546ed256ab4f.png"/>
+          <screenshot image="ff7993aac88a9ea3c449567c4673f84c.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; types &apos;ENTER&apos; in Destino Input</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="3357">
+        <screenshots>
+          <screenshot image="437eeb77a92aef6bcff9256acd63fa8e.png"/>
+          <screenshot image="aa2f589f4ad83847d1016a553c381ab1.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; clicks on Fecha de inicio</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="3150">
+        <screenshots>
+          <screenshot image="707a99d3d436e9328c1612e121bb2686.png"/>
+          <screenshot image="f8f613a0b5d05a78db5ded1d251738be.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; clicks on Dia inicial</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1671">
+        <screenshots>
+          <screenshot image="30ea97bf8e388e4d209ba1fe36e13e7f.png"/>
+          <screenshot image="b8aeae0b12439899162db5e9431c66a8.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; clicks on Dia final</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="13772">
+        <screenshots>
+          <screenshot image="189b5a6649a6afe621f275ff86f18fb4.png"/>
+          <screenshot image="661fe3986d7732340c848d874c1d54b1.png"/>
+        </screenshots>
+        <description>&lt;span class=&apos;step-parameter&apos;&gt;Juan&lt;/span&gt; clicks on Buscar button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then Juan should see as cheaper prize &quot;1.841.847&quot;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="661fe3986d7732340c848d874c1d54b1.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1685">
+        <screenshots>
+          <screenshot image="661fe3986d7732340c848d874c1d54b1.png"/>
+        </screenshots>
+        <description>Then the best price should be &apos;1.841.847&apos;</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="3134">
+      <screenshots>
+        <screenshot image="661fe3986d7732340c848d874c1d54b1.png"/>
+      </screenshots>
+      <description>And An excel should be created, with the prices in him</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

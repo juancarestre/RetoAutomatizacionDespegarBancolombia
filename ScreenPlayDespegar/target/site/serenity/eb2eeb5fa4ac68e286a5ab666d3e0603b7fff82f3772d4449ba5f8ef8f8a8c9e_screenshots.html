@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="42f1aae7d838c105451b92365cbf4677a4ba45dae055c8abb95dc4363e858c21.html">Despegar.Com</a>
+                > <a
+                    href="eb2eeb5fa4ac68e286a5ab666d3e0603b7fff82f3772d4449ba5f8ef8f8a8c9e.html">: search for prizes of flights from 'Bogot&aacute;, Bogot&aacute; D.C., Co&hellip; </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-07-2018 15:21</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Despegar.Com</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a inspacient traveler<br>I want to search for cheap flights<br>To find the most viable flights
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">: search for prizes of flights from 'Bogotá, Bogotá D.C., Colombia' to 'Ciudad de México, México D.F., México' between
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+
+        <div class="scenario">Given Juan is on the Despegar home page<br>When Juan search for flights from "Bogotá, Bogotá D.C., Colombia" to "Ciudad de México, México D.F., México" between "Vie, 31 jul 2018" and "Jue, 30 ago 2018"<br>Then Juan should see as cheaper prize "1.841.847"<br>And An excel should be created, with the prices in him</div>
+    </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="5f9e8f348eec26c2fe6fd15633296a8f.png" title="Opens the Despegar home page" width="960"/>
+                <img src="scaled_5a2fee156718123449625922aab8e1e7.png" title="Opens the Despegar home page" width="960"/>
+                <img src="scaled_eb1aa76d47a9088a926e0f629748ab6c.png" title="Opens the Despegar home page" width="960"/>
+                <img src="scaled_d65d2b3b8f1156f4c7f515bb86b308c7.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Origen" width="960"/>
+                <img src="scaled_c01863f8262babe6924db65394c1f899.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Origen" width="960"/>
+                <img src="scaled_2cc4f2463c620b4b8988a3fc2f3c127b.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; enters 'Bogot&aacute;, Bogot&aacute; D.C., Colombia' into Origen Input then hits [ENTER]" width="960"/>
+                <img src="scaled_6abe45da93dd7220abf71d3a7f9a76fe.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; enters 'Bogot&aacute;, Bogot&aacute; D.C., Colombia' into Origen Input then hits [ENTER]" width="960"/>
+                <img src="scaled_88d36864615deb08cdd9ee664d897a31.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; types 'ENTER' in Origen Input" width="960"/>
+                <img src="scaled_eb6bdb803aca89d81ba06bee18ed9053.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; types 'ENTER' in Origen Input" width="960"/>
+                <img src="scaled_49602931924392fc6dbe2bb5a9de6bfb.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Destino" width="960"/>
+                <img src="scaled_056cb9fed1293a0064586dcdd0bdf8c9.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Destino" width="960"/>
+                <img src="scaled_3c9446043728a21de968ae6486fdd413.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; enters 'Ciudad de M&eacute;xico, M&eacute;xico D.F., M&eacute;xico' into Destino Input then hits [ENTER]" width="960"/>
+                <img src="scaled_8359f8285892fd220d0653eb7691f240.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; enters 'Ciudad de M&eacute;xico, M&eacute;xico D.F., M&eacute;xico' into Destino Input then hits [ENTER]" width="960"/>
+                <img src="scaled_a8025013d334a59cd796546ed256ab4f.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; types 'ENTER' in Destino Input" width="960"/>
+                <img src="scaled_ff7993aac88a9ea3c449567c4673f84c.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; types 'ENTER' in Destino Input" width="960"/>
+                <img src="scaled_437eeb77a92aef6bcff9256acd63fa8e.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Fecha de inicio" width="960"/>
+                <img src="scaled_aa2f589f4ad83847d1016a553c381ab1.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Fecha de inicio" width="960"/>
+                <img src="scaled_707a99d3d436e9328c1612e121bb2686.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Dia inicial" width="960"/>
+                <img src="scaled_f8f613a0b5d05a78db5ded1d251738be.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Dia inicial" width="960"/>
+                <img src="30ea97bf8e388e4d209ba1fe36e13e7f.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Dia final" width="960"/>
+                <img src="scaled_b8aeae0b12439899162db5e9431c66a8.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Dia final" width="960"/>
+                <img src="scaled_189b5a6649a6afe621f275ff86f18fb4.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Buscar button" width="960"/>
+                <img src="661fe3986d7732340c848d874c1d54b1.png" title="&lt;span class='step-parameter'&gt;Juan&lt;/span&gt; clicks on Buscar button" width="960"/>
+                <img src="661fe3986d7732340c848d874c1d54b1.png" title="Then the best price should be '1.841.847'" width="960"/>
+                <img src="661fe3986d7732340c848d874c1d54b1.png" title="And An excel should be created, with the prices in him: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.25-rc.2</span>
+</div>
+</body>
+</html>
